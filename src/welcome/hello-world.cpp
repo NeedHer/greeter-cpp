@@ -1,9 +1,9 @@
-#include <greeter/hello.hpp>
+#include <greeter/welcome.hpp>
 #include <print>
 
 using namespace std;
 
-namespace greeter::hello {
+namespace greeter::welcome {
 HelloWorld::HelloWorld(const string& user)
   : name(user) { }
 
@@ -15,4 +15,4 @@ void HelloWorld::sayHello() const {
   string message = this->hello();
   println("{}", message);
 }
-} // namespace greeter::hello
+} // namespace greeter::welcome

@@ -1,9 +1,9 @@
-#include <greeter/goodbye.hpp>
+#include <greeter/farewell.hpp>
 #include <print>
 
 using namespace std;
 
-namespace greeter::goodbye {
+namespace greeter::farewell {
 GoodbyeWorld::GoodbyeWorld(const string& user)
   : name(user) { }
 
@@ -15,4 +15,4 @@ void GoodbyeWorld::sayGoodbye() const {
   string message = this->goodbye();
   println("{}", message);
 }
-} // namespace greeter::goodbye
+} // namespace greeter::farewell
